@@ -75,19 +75,67 @@ form input[type="text"] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+.instagram-link {
+  display: inline-block;
+  position: relative;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.instagram-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.instagram-logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.instagram-name {
+  color: #ffffff;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+@media (max-width: 480px) {
+  .instagram-link {
+    font-size: 16px;
+  }
+  
+  .instagram-logo {
+    height: 40px;
+  }
+  
+  .instagram-name {
+    font-size: 18px;
+  }
+}
+
+
 
 	</style>
-    
+   
+   <div class="instagram-link">
+    <a href="https://www.instagram.com/py_suraj/" target="_blank" rel="noopener">
+      <div class="glowing-border">
+        <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram Logo" class="instagram-logo">
+      </div>
+      <span class="instagram-name">suraj</span>
+    </a>
+</div>  
+
+      
 </head>
 <body>
 	<h1>CGPA Calculator</h1>
 	<form>
-		
-
-
-
-
-
 
 <label for="dsa">&#9874; DSA:</label>
 
@@ -120,7 +168,6 @@ form input[type="text"] {
         
 		<input type="text" id="cgpa" name="cgpa" readonly>
 	</form>
-	
 	<script>
 		function calculateCGPA() {
 			var dsaMarks = parseInt(document.getElementById("dsa").value);
@@ -167,5 +214,6 @@ form input[type="text"] {
 			return 0;
 		}
 	}
+
 </script>
 

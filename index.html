@@ -3,66 +3,83 @@
 <head>
 	<title>CGPA Calculator</title>
     <style>
-        body {
-            background-color: #2c3e50;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
-    
-        h1 {
-            text-align: center;
-        }
-    
-        form {
-            margin: 0 auto;
-            max-width: 500px;
-            text-align: center;
-        }
-    
-        form label {
-            display: inline-block;
-            width: 100px;
-            text-align: right;
-            margin-right: 10px;
-        }
-    
-        form input[type="number"],
-        form input[type="text"] {
-            border: none;
-            border-radius: 4px;
-            padding: 8px;
-            margin-bottom: 10px;
-            background-color: #34495e;
-            color: #fff;
-        }
-    
-        form input[type="button"] {
-            background-color: #3498db;
-            border: none;
-            border-radius: 4px;
-            color: #fff;
-            cursor: pointer;
-            padding: 10px 20px;
-            margin-top: 10px;
-            transition: background-color 0.3s ease-in-out;
-        }
-    
-        form input[type="button"]:hover {
-            background-color: #2980b9;
-        }
-    
-        form input[type="button"]:active {
-            background-color: #1e8bc3;
-        }
-    
-        form input[type="button"]:focus {
-            outline: none;
-        }
-    
-        form input[type="button"]:not(:last-child) {
-            margin-right: 10px;
-        }
-    </style>
+		body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://picsum.photos/1920/1080');
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  text-shadow: 2px 2px #000;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  display: inline-block;
+  width: 80px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+input[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+input[type="text"] {
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+input[type="button"]:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+		
+	</style>
     
 </head>
 <body>

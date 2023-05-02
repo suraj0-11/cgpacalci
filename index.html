@@ -3,115 +3,121 @@
 <head>
 	<title>CGPA Calculator</title>
     <style>
-		body {
+        html, body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('https://picsum.photos/1920/1080');
+  height: 100%;
+  background: #202020;
+  color: #fff;
+}
+
+body {
+  background: url('https://picsum.photos/800/600?grayscale&blur=2') no-repeat center center fixed;
   background-size: cover;
 }
 
 h1 {
   text-align: center;
-  color: #fff;
-  margin-top: 50px;
-  text-shadow: 2px 2px #000;
 }
 
 form {
-  width: 400px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-label {
-  display: inline-block;
-  width: 80px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-input[type="number"] {
-  width: 100px;
-  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  border: none;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-input[type="button"] {
-  background-color: #4CAF50;
-  color: white;
+form input[type="number"] {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+form input[type="button"] {
+  margin: 20px auto 0;
   padding: 10px 20px;
+  background-color: #4CAF50;
   border: none;
   border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-top: 20px;
+  transition: all 0.3s ease;
 }
 
-input[type="button"]:hover {
+form input[type="button"]:hover {
   background-color: #3e8e41;
 }
 
-input[type="text"] {
-  width: 50px;
-  padding: 5px;
-  border-radius: 5px;
+form input[type="text"] {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
   border: none;
-  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-input[type="button"]:active {
-  transform: translateY(1px);
-  box-shadow: none;
-}
-
-		
 	</style>
     
 </head>
 <body>
 	<h1>CGPA Calculator</h1>
 	<form>
-		<label for="dsa">DSA:</label>
+		
+
+
+
+
+
+
+<label for="dsa">&#9874; DSA:</label>
+
 		<input type="number" id="dsa" name="dsa" min="0" max="100" required><br><br>
 		
-		<label for="co">CO:</label>
+		<label for="co">&#127800; CO:</label>
 		<input type="number" id="co" name="co" min="0" max="100" required><br><br>
+		<label for="ade">&#9879; ADE:</label>
 		
-		<label for="ade">ADE:</label>
 		<input type="number" id="ade" name="ade" min="0" max="100" required><br><br>
+		<label for="math">&#8756; MATH:</label>
 		
-		<label for="math">MATH:</label>
 		<input type="number" id="math" name="math" min="0" max="100" required><br><br>
+		<label for="java">&#127867; JAVA:</label>
 		
-		<label for="java">JAVA:</label>
 		<input type="number" id="java" name="java" min="0" max="100" required><br><br>
+		<label for="mo">&#9733; MO:</label>
 		
-		<label for="mo">MO:</label>
 		<input type="number" id="mo" name="mo" min="0" max="100" required><br><br>
+		<label for="scr">&#9998; SCR:</label>
 		
-		<label for="scr">SCR:</label>
 		<input type="number" id="scr" name="scr" min="0" max="100" required><br><br>
 		
-		<label for="kan">KAN:</label>
+		<label for="kan">&#127470; KAN:</label>
 		<input type="number" id="kan" name="kan" min="0" max="100" required><br><br>
 		
 		<input type="button" value="Calculate CGPA" onclick="calculateCGPA()"><br><br>
 		
 		<label for="cgpa">CGPA:</label>
+        
 		<input type="text" id="cgpa" name="cgpa" readonly>
 	</form>
 	
